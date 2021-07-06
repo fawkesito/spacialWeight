@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <meta charset="utf-8">
+        <title>¿Cuanto peso?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <h1>¿Por qué pesamos diferente en otros planetas?</h1>
+         <p>El peso depende de su masa y de la fuerza de con la que la gravedad tira de él, dependiendo la masa del planeta podemos pesar més o menos, ya que esta altera la gravedad misma.</p>
+         <br />
+         <div>
+         <form name="pesoplaneta" id="pesoplaneta" method="POST" onsubmit="capturaDatos(); return false">         
+             <label>Cuanto kilos pesas?</label>
+             <input type="number" name="peso" id="peso" required>
+             <br />
+             <label>Escoge un planeta</label>
+             <select name="planeta" id="planeta" required>
+             <option value="1">Mercurio</option>
+             <option value="2">Venus</option>
+             <option value="3">Tierra</option>
+             <option value="4">Marte</option>
+             <option value="5">Jupiter</option>
+             <option value="6">Saturno</option>
+             <option value="7">Urano</option>
+             <option value="8">Neptuno</option>
+            </select>
+            <br />
+            <input type="submit" value="Enviar" id="Enviar">
+         </form>
+         </div>
+         <section>
+            <p id=textofinal></p>
+            
+         </section>
+         <footer id=ovni>
+            <image src="OVNI_icono.png"></image>
+         </footer>         
+         <script src="script.js"></script>
+    </body>
